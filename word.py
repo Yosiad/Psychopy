@@ -42,7 +42,6 @@ for word in test_words:
 
     results.append({"word": word, "seen_before": seen_before, "response": response, "correct": correct})
 
-# Show score
 num_correct = sum(1 for r in results if r["correct"])
 num_wrong = len(results) - num_correct
 
